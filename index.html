@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	
+	<link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Pacifico'>
+	
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/vendor/modernizr.js"></script>
+
+	<style>
+		h1 {
+			font-family: 'Pacifico', serif;
+			font-size: 80px;
+			padding-top: 60px;
+			padding-bottom: 130px;
+			background: #CCF5F6;
+		}
+		body {
+			font-family: 'Tangerine', serif;
+			font-size: 20px;
+			background: #CCF5F6;
+		}
+
+		img.hoverImages {
+			margin:20px;
+			padding:3px;
+			border: #a1a1a1;
+			float:left;
+			-webkit-transition: margin 0.5s ease-out;
+			-moz-transition: margin 0.5s ease-out;
+			-o-transition: margin 0.5s ease-out;
+		}
+		img.hoverImages:hover {
+			cursor:pointer;
+			margin-top: 5px;
+		}
+	</style>
+	<script type="text/javascript" src="js/paper.js"></script>
+	<!-- Define inlined PaperScript associate it with myCanvas -->
+	<script type="text/paperscript" canvas="myCanvas">
+		// Create a Paper.js Path to draw a line into it:
+		var path = new Path();
+		// Give the stroke a color
+		path.strokeColor = 'black';
+		var start = new Point(100, 100);
+		// Move to start and draw a line from there
+		path.moveTo(start);
+		// Note the plus operator on Point objects.
+		// PaperScript does that for us, and much more!
+		path.lineTo(start + [ 100, -50 ]);
+	</script>
+	<title> Maura Fitzgerald </title>
+
+
+<div id = "title bar">
+	<div class= "row">
+		<div class="medium-12 columns text-center"> <h1> Maura Fitzgerald </h1> </div>
+	</div>
+</div>
+
+</head>
+
+
+<body>
+	<div id = "icon row">
+		<div class="row">
+			<div class="medium-3 columns">
+				<a href="https://github.com/momochanfitz"><img class="hoverImages" src="photos/githubLogo.png"></a>
+			</div>
+			<div class="medium-3 columns">
+				<a href="https://www.flickr.com/photos/26579383@N07/"> <img class="hoverImages" src="photos/cameraLogo.png"> </a>
+			</div>
+			<div class="medium-3 columns">
+				<a href="https://www.linkedin.com/pub/maura-fitzgerald/59/153/741"> <img class="hoverImages" src="photos/linkedinLogo.png"> </a>
+			</div>
+			<div class="medium-3 columns">
+				<a href="https://soundcloud.com/momochanfitz"><img class="hoverImages" src="photos/violinLogo.png"></a>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/vendor/jquery.js"></script>
+  	<script src="js/foundation.min.js"></script>
+  	<script>
+    	$(document).foundation();
+  	</script>
+</body>
+</html>
+  
+
+
