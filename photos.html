@@ -22,6 +22,7 @@
     
     body {
         width: 100%;
+        overflow-x: hidden;
         height: 100%;
     }
 
@@ -30,11 +31,13 @@
         position: absolute;
         width: 69%;
         left: 50%;
-        margin-left: -31%;
+        margin-left: -34%;
     }
 
     #instafeed a img{
         padding: 15px;
+        width: 300px;
+        clip: rect(0px,60px,200px,0px);
     }
     </style>
     <title> Maura Fitzgerald </title>
@@ -52,19 +55,6 @@
         </div>
     </div>
     <div id="instafeed"></div> 
-    <div class="section group" style="margin-left:150px; margin-top: 100px;">
-        <div class="col span_1_of_4">
-        </div>
-        <div class="col span_1_of_4">
-            This is column 2
-        </div>
-        <div class="col span_1_of_4">
-            This is column 3
-        </div>
-        <div class="col span_1_of_4">
-            This is column 4
-        </div>
-    </div>
     
     <script>
     $(".link").on("mouseover", function() {
@@ -87,7 +77,9 @@
     var feed = new Instafeed({
         get: 'user',
         userId: config.USER_ID,
-        accessToken: config.ACCESS_TOKEN
+        accessToken: config.ACCESS_TOKEN,
+        resolution: 'standard_resolution',
+        limit: 300
     });
     feed.run();
 
