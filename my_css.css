@@ -1,0 +1,92 @@
+html {
+			width:100%;
+			height: 100%;
+		}
+
+		body {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+		}
+
+		.name {
+			font-family: 'antre';
+			font-size: 40px;
+			color: #D6F8D6;
+			text-align: right;
+			position: absolute;
+			top: 35px;
+			float: right;
+			width: 500px;
+			right: 90px;
+		}
+		
+
+		.color-larger {
+			background-color: #A6CFD5;
+			height: 180px;
+			width: 100%;
+			position: absolute;
+			opacity: 0.7;
+		}
+
+		.link-bar {
+			position: absolute;
+			float: right;
+			right: 50px;
+			top: 110px;
+			display: inline-flex;
+		}
+
+		.link {
+			color: white;
+			font-family: 'Montserrat';
+			font-size: 20px;
+			margin-right: 40px;
+		}
+
+		.full-screen {
+  			top: -50%; 
+  			left: -50%; 
+  			width: 200%; 
+  			height: 200%;
+
+		}
+
+		.profile_photo {
+			width: 150px;
+			height: 150px;
+			position: relative;
+			left:15px;
+			float: left;
+		}
+
+		.image {
+			position: absolute; 
+  			top: 0; 
+		  	left: 0; 
+		  	right: 0; 
+		  	bottom: 0; 
+		  	margin: auto; 
+		  	min-width: 50%;
+		  	min-height: 50%;
+		  	background-image: url("assets/27.jpg");
+		  	background-size: cover;
+		}
+
+		.hover-green {
+			color: #D6F8D6;
+		}
+
+		.hover-white {
+			color: white;
+		}
+
+		.in-progress {
+			color: white;
+			font-size: 20px;
+			font-family: 'Montserrat';
+			position: absolute;
+			top: 10%;
+			right: 10%;
+		}
