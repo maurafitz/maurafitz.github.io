@@ -1,0 +1,4 @@
+var config = {
+  USER_ID: '2530357374',
+  ACCESS_TOKEN: '2530357374.d983e1b.031dfdded6614b7595e1970ef81b133a'
+}
