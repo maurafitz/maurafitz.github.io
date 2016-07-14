@@ -1,1 +1,84 @@
-photos
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- FONTS -->
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Pacifico'>
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Lobster'>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy|Montserrat|Raleway:400,300|Francois+One|Playfair+Display' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="4cols.css">
+    <link rel="stylesheet" type="text/css" href="col.css">
+    <link rel="stylesheet" type="text/css" href='my_css.css'>
+    <script type="text/javascript" src="instafeed.min.js"></script>
+
+    <style>
+    html {
+        width: 100%;
+        height: 100%;
+    }
+    
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+    <title> Maura Fitzgerald </title>
+</head>
+
+<body style="margin:0px;">
+    <div class="full-screen">
+        <div class="color-larger"> </div>
+        <div class="name"> MAURA FITZGERALD </div>
+        <div class="link-bar">
+            <div class="link">RESUME</div>
+            <div class="link">PROJECTS</div>
+            <div class="link">PHOTOS</div>
+            <div class="link">CONTACT</div>
+        </div>
+    </div>
+    <div id="instafeed"></div> 
+    <div class="section group" style="margin-left:150px; margin-top: 100px;">
+        <div class="col span_1_of_4">
+        </div>
+        <div class="col span_1_of_4">
+            This is column 2
+        </div>
+        <div class="col span_1_of_4">
+            This is column 3
+        </div>
+        <div class="col span_1_of_4">
+            This is column 4
+        </div>
+    </div>
+    
+    <script>
+    $(".link").on("mouseover", function() {
+        $(this).addClass('hover-green');
+    });
+    $(".link").on("mouseout", function() {
+        $(this).removeClass('hover-green');
+    });
+    $(".name").on("mouseover", function() {
+        $(this).addClass('hover-white');
+    });
+    $(".name").on("mouseout", function() {
+        $(this).removeClass('hover-white');
+    });
+    $(".name").on("click", function() {
+        location.href = 'homepage.html';
+    });
+
+    
+    var feed = new Instafeed({
+        get: 'user',
+        userId: 'exposuresbymo',
+        accessToken: '2530357374.1677ed0.c95df189bd8e452b8cdacb41aeb45da2'
+    });
+    feed.run();
+
+    </script>
+</body>
+
+</html>
