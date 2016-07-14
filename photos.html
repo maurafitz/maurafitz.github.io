@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="4cols.css">
     <link rel="stylesheet" type="text/css" href="col.css">
     <link rel="stylesheet" type="text/css" href='my_css.css'>
+
+    <script type='text/javascript' src='config.js'></script>
+
     <script type="text/javascript" src="instafeed.min.js"></script>
 
     <style>
@@ -22,6 +25,22 @@
     body {
         width: 100%;
         height: 100%;
+        overflow-x: hidden;
+        height: 100%;
+    }
+
+    #instafeed {
+        top: 300px;
+        position: absolute;
+        width: 69%;
+        left: 50%;
+        margin-left: -34%;
+    }
+
+    #instafeed a img{
+        padding: 15px;
+        width: 300px;
+        clip: rect(0px,60px,200px,0px);
     }
     </style>
     <title> Maura Fitzgerald </title>
@@ -39,19 +58,6 @@
         </div>
     </div>
     <div id="instafeed"></div> 
-    <div class="section group" style="margin-left:150px; margin-top: 100px;">
-        <div class="col span_1_of_4">
-        </div>
-        <div class="col span_1_of_4">
-            This is column 2
-        </div>
-        <div class="col span_1_of_4">
-            This is column 3
-        </div>
-        <div class="col span_1_of_4">
-            This is column 4
-        </div>
-    </div>
     
     <script>
     $(".link").on("mouseover", function() {
@@ -67,14 +73,16 @@
         $(this).removeClass('hover-white');
     });
     $(".name").on("click", function() {
-        location.href = 'homepage.html';
+        location.href = 'index.html';
     });
 
     
     var feed = new Instafeed({
         get: 'user',
-        userId: 'exposuresbymo',
-        accessToken: '2530357374.1677ed0.c95df189bd8e452b8cdacb41aeb45da2'
+        userId: config.USER_ID,
+        accessToken: config.ACCESS_TOKEN,
+        resolution: 'standard_resolution',
+        limit: 300
     });
     feed.run();
 
