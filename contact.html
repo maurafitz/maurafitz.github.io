@@ -14,8 +14,6 @@
 
     <script type='text/javascript' src='config.js'></script>
 
-    <script type="text/javascript" src="instafeed.min.js"></script>
-
     <style>
     
     body {
@@ -23,20 +21,6 @@
         height: 100%;
         overflow-x: hidden;
         height: 100%;
-    }
-
-    #instafeed {
-        top: 300px;
-        position: absolute;
-        width: 69%;
-        left: 50%;
-        margin-left: -34%;
-    }
-
-    #instafeed a img{
-        padding: 15px;
-        width: 300px;
-        clip: rect(0px,60px,200px,0px);
     }
     </style>
     <title> Maura Fitzgerald </title>
@@ -53,16 +37,7 @@
             <div class="link">CONTACT</div>
         </div>
     </div>
-    <div class=icons> 
-        <a href="https://www.instagram.com/exposuresbymo/" style="position:absolute; top:230px; left:100px">
-            <img src="assets/instagram.png">
-        </a>
-        <a href="https://www.flickr.com/photos/maurafitzgerald/" style="position:absolute; top:230px; left:210px">
-            <img src="assets/flickr.png">
-        </a>
-    </div> 
-    <div id="instafeed"></div> 
- 
+   
     
     <script>
     $(".link").on("mouseover", function() {
@@ -80,19 +55,12 @@
     $(".name").on("click", function() {
         location.href = 'index.html';
     });
+    $(".link:eq(2)").on("click", function() {
+        location.href = 'photos.html';
+    });
     $(".link:eq(3)").on("click", function() {
         location.href = 'contact.html';
     });
-
-    
-    var feed = new Instafeed({
-        get: 'user',
-        userId: config.USER_ID,
-        accessToken: config.ACCESS_TOKEN,
-        resolution: 'standard_resolution',
-        limit: 20
-    });
-    feed.run();
 
     </script>
 </body>
