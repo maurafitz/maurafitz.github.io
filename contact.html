@@ -83,7 +83,7 @@
     </div>
     <div class="prof_photo"></div>
     <div class="contact-blurb">
-        I'm a senior at UC Berkeley studying Electrical Engineering and Computer Science and expecting to graduate May 2017. I'm interested in creative applications of programming and focus on front-end engineering and good design.
+        I'm a senior at UC Berkeley studying Electrical Engineering and Computer Science, expecting to graduate May 2017. I'm interested in creative applications of programming and focus on front-end engineering and good design.
     </div>
     <div class="icon-div">
         <img src="assets/email.png" style="height: 40px">
@@ -117,6 +117,9 @@
     });
     $(".name").on("mouseout", function() {
         $(this).removeClass('hover-white');
+    });
+    $(".link:eq(0)").on("click", function() {
+        location.href = 'resume.html';
     });
     $(".name").on("click", function() {
         location.href = 'index.html';

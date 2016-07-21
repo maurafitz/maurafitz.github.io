@@ -30,7 +30,6 @@
 			<div class="link">CONTACT</div>
 		</div>
 
-		<div class="in-progress"> website in progress</div>
 	</div>
 
 	<script>
@@ -40,6 +39,9 @@
 		$(".link").on("mouseout", function() {
 			$(this).removeClass('hover-green');
 		});
+		$(".link:eq(0)").on("click", function() {
+        	location.href = 'resume.html';
+    	});
 		$(".link:eq(2)").on("click", function() {
 			location.href = 'photos.html';
 		});
