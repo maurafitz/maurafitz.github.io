@@ -25,7 +25,7 @@
 
 		<div class="link-bar"> 
 			<div class="link">RESUME</div>
-			<div class="link">PROJECTS</div>
+			<!-- <div class="link">PROJECTS</div> -->
 			<div class="link">PHOTOS</div>
 			<div class="link">CONTACT</div>
 		</div>
@@ -42,7 +42,7 @@
 		$(".link:eq(0)").on("click", function() {
         	location.href = 'resume.html';
     	});
-		$(".link:eq(2)").on("click", function() {
+		$(".link:eq(1)").on("click", function() {
 			location.href = 'photos.html';
 		});
 		$(".name").on("mouseover", function() {
@@ -51,7 +51,7 @@
     	$(".name").on("mouseout", function() {
         	$(this).removeClass('hover-white');
     	});
-    	$(".link:eq(3)").on("click", function() {
+    	$(".link:eq(2)").on("click", function() {
         	location.href = 'contact.html';
     	});
 	</script>
