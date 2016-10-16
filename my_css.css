@@ -12,7 +12,8 @@ html {
 		.name {
 			font-family: 'Francois One';
 			font-size: 40px;
-			color: #D6F8D6;
+			color: #F7CAC9;
+			/*#D6F8D6;*/
 			text-align: right;
 			position: absolute;
 			top: 35px;
@@ -23,11 +24,12 @@ html {
 		
 
 		.color-larger {
-			background-color: #A6CFD5;
+			background-color: #92A8D1;
+/*			#A6CFD5;*/
 			height: 180px;
 			width: 100%;
 			position: absolute;
-			opacity: 0.7;
+			opacity: 0.8;
 		}
 
 		.link-bar {
@@ -58,6 +60,7 @@ html {
 			height: 150px;
 			position: relative;
 			left:15px;
+			top: 65px;
 			float: left;
 		}
 
@@ -70,7 +73,7 @@ html {
 		  	margin: auto; 
 		  	min-width: 50%;
 		  	min-height: 50%;
-		  	background-image: url("assets/27.jpg");
+		  	background-image: url("assets/38.jpg");
 		  	background-size: cover;
 		}
 
