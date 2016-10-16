@@ -20,17 +20,16 @@
 	<div class="full-screen"> 
 		<div class="image"></div> 
 		<div class="color-larger"> </div>
-		<div class="profile_photo"><img src="assets/flowers.png"></div>
+		<div class="profile_photo"><img src="assets/flowers.png" style="height: 620px;"></div>
 		<div class="name"> MAURA FITZGERALD </div>
 
 		<div class="link-bar"> 
 			<div class="link">RESUME</div>
-			<div class="link">PROJECTS</div>
+			<!-- <div class="link">PROJECTS</div> -->
 			<div class="link">PHOTOS</div>
 			<div class="link">CONTACT</div>
 		</div>
 
-		<div class="in-progress"> website in progress</div>
 	</div>
 
 	<script>
@@ -40,7 +39,10 @@
 		$(".link").on("mouseout", function() {
 			$(this).removeClass('hover-green');
 		});
-		$(".link:eq(2)").on("click", function() {
+		$(".link:eq(0)").on("click", function() {
+        	location.href = 'resume.html';
+    	});
+		$(".link:eq(1)").on("click", function() {
 			location.href = 'photos.html';
 		});
 		$(".name").on("mouseover", function() {
@@ -48,6 +50,9 @@
     	});
     	$(".name").on("mouseout", function() {
         	$(this).removeClass('hover-white');
+    	});
+    	$(".link:eq(2)").on("click", function() {
+        	location.href = 'contact.html';
     	});
 	</script>
 </body>

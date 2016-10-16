@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- FONTS -->
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Pacifico'>
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Lobster'>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy|Montserrat|Raleway:400,300|Francois+One|Playfair+Display' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="4cols.css">
+    <link rel="stylesheet" type="text/css" href="col.css">
+    <link rel="stylesheet" type="text/css" href='my_css.css'>
+
+    <script type='text/javascript' src='config.js'></script>
+
+    <style>
+    
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        height: 1600px;
+    }
+    embed {
+        position: absolute;
+        top: 400px;
+        left: calc(50% - 400px);
+    }
+
+    .full-screen a {
+        position: absolute;
+        top: 250px;
+        left: 150px;
+    }
+
+    </style>
+
+    <title> Maura Fitzgerald </title>
+</head>
+
+<body style="margin:0px;">
+    <div class="full-screen">
+        <div class="color-larger"> </div>
+        <div class="name"> MAURA FITZGERALD </div>
+        <div class="link-bar">
+            <div class="link">RESUME</div>
+            <!-- <div class="link">PROJECTS</div> -->
+            <div class="link">PHOTOS</div>
+            <div class="link">CONTACT</div>
+        </div>
+
+        <a href="https://www.linkedin.com/in/maurafitzgerald15"> 
+            <img src="assets/linkedin.png" style="height: 80px;">
+        </a>
+        <a href="https://www.github.com/maurafitz"> 
+            <img src="assets/github2.png" style="height: 73px; padding: 4px; position:absolute; left: 100px;">
+        </a>
+    
+
+        <embed src="assets/resume_maura_fitzgerald.pdf" width="800px" height="1100px">
+    </div>
+    
+
+
+    
+    <script>
+    $(".link").on("mouseover", function() {
+        $(this).addClass('hover-green');
+    });
+    $(".link").on("mouseout", function() {
+        $(this).removeClass('hover-green');
+    });
+    $(".name").on("mouseover", function() {
+        $(this).addClass('hover-white');
+    });
+    $(".name").on("mouseout", function() {
+        $(this).removeClass('hover-white');
+    });
+    $(".link:eq(0)").on("click", function() {
+        location.href = 'resume.html';
+    });
+    $(".name").on("click", function() {
+        location.href = 'index.html';
+    });
+    $(".link:eq(1)").on("click", function() {
+        location.href = 'photos.html';
+    });
+    $(".link:eq(2)").on("click", function() {
+        location.href = 'contact.html';
+    });
+
+    </script>
+</body>
+
+</html>
