@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- FONTS -->
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Pacifico'>
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Lobster'>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy|Montserrat|Raleway:400,300|Francois+One|Playfair+Display' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href='my_css.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script type='text/javascript' src='config.js'></script>
+
+    <style>
+    
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        height: 1900px;
+    }
+
+    .txt {
+        font-family: 'Montserrat';
+        color: #615E5F;
+    }
+
+    .proj {
+        color: #C3DDD6;
+    }
+
+    .body {
+        font-family: 'Raleway';
+
+    }
+    
+
+    </style>
+    <title> Maura Fitzgerald </title>
+</head>
+
+<body style="margin:0px;">
+    <div class="full-screen">
+        <div class="color-larger"> </div>
+        <div class="name"> MAURA FITZGERALD </div>
+        <div class="link-bar">
+            <div class="link">RESUME</div>
+            <div class="link">PROJECTS</div>
+            <div class="link">PHOTOS</div>
+            <div class="link">CONTACT</div>
+        </div>
+
+    <div class="txt" style="position: relative; float: left; width:100%; padding-left: 150px; top: 250px; ">
+    <h1 class="proj"> Google Doodle </h1>
+    <h3> Halloween 2015 Game</h3> 
+
+    <div class="row"> 
+    <div class="col-md-3" style="font-size:16px; margin-top:50px;">
+   	While participating in Google's Engineering Practicum internship during Summer 2015, I worked on the Halloween Google Doodle for that year. The goal is to collect as many candies possible for the colored team that you choose. At the end of the game, the global scores for each team is displayed. <br><br>
+   	The game was built using HTML5, CSS, and Javascript.
+   	<br><br>The game can be played <a href="https://www.google.com/doodles/halloween-global-candy-cup-2015">here</a>.
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-6">
+    	<div class="row" style="padding-left:30px; padding-right:50px;">
+    		<img src="assets/players.png" style="width:100%"> 
+    	</div>
+    	<div class="row" style="margin-top:30px; margin-left:15px">
+    		<div class="col-md-5" style="padding:0px">
+    		<img src="assets/air.png" style="width:100%"> 
+    		</div>
+    		<div class="col-md-1"></div>
+    		<div class="col-md-5" style="padding:0px;">
+    		<img src="assets/candycup.png" style="width:100%">
+    		</div>
+
+    	</div>
+    </div>
+    <div class="col-md-2"></div>
+    </div>
+    </div>
+ 
+
+    <div class="txt" style="position: relative; float: left; width:100%; padding-left: 150px; margin-top: 300px; ">
+    <h1 class="proj"> Modafy </h1>
+    <h3> Fashion iOS App</h3>
+    <h5> European Innovation Academy </h5> 
+    <div class="row">
+    	<div class="col-md-3" style="margin-top:40px; font-size: 16px;">
+    	Worked with a team of five to develop an app that enables user to easily swipe through clothing items from their closet on one simple screen, create outfits for the days to come, and readily share them with friends. Facilitates crowd sourcing of one’s outfits. Built using iOS and tied to store clothing via a backend (built.io). Additionally worked to create a business monetization strategy and researched consumer marketing strategies.
+    		
+    	</div> <!-- text div -->
+    	<div class="col-md-1"></div>
+    	<div class="col-md-6" style="margin-top:-50px">
+    	
+    	<div class="col-md-6" style="padding:0px;">
+    		<img src="assets/eia.jpg" style="width:100%"> 
+    		<img src="assets/dress.png" style="width:100%; margin-top: 20px; "> 
+    	</div>
+    	<div class="col-md-6" style="padding-left:40px;">
+    		<embed src="assets/modafyvid.mp4" style="width: 300px; height: 500px;"controller="true">
+    	</div>
+    		
+    	</div> <!-- photo div -->
+		<div class="col-md-2">    	
+
+
+    </div> <!-- end row -->
+
+    </div>
+</div>
+
+
+
+
+    
+
+    
+    <script>
+    $(".link").on("mouseover", function() {
+        $(this).addClass('hover-green');
+    });
+    $(".link").on("mouseout", function() {
+        $(this).removeClass('hover-green');
+    });
+    $(".name").on("mouseover", function() {
+        $(this).addClass('hover-white');
+    });
+    $(".name").on("mouseout", function() {
+        $(this).removeClass('hover-white');
+    });
+    $(".link:eq(0)").on("click", function() {
+        location.href = 'resume.html';
+    });
+    $(".name").on("click", function() {
+        location.href = 'index.html';
+    });
+    $(".link:eq(1)").on("click", function() {
+        location.href = 'projects.html';
+    });
+    $(".link:eq(2)").on("click", function() {
+        location.href = 'photos.html';
+    });
+    $(".link:eq(3)").on("click", function() {
+        location.href = 'contact.html';
+    });
+
+    </script>
+</body>
+
+</html>
