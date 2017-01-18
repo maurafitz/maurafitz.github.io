@@ -37,6 +37,29 @@
         width: 300px;
         clip: rect(0px,60px,200px,0px);
     }
+
+    @-webkit-keyframes fadein {
+        from { opacity: 0.2; }
+        to   { opacity: 1; }
+    }
+
+    @-webkit-keyframes ytranslate {
+        from { transform: translateY(100px); }
+        to   { transform: translateY(0px); }
+    }
+
+    .faded {
+        -webkit-animation: fadein 2s;
+        -webkit-animation-timing-function: ease-out;
+     }
+
+    .yani {
+        -webkit-animation-name: ytranslate;
+        -webkit-animation-delay: 0.5s;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: ease-out;
+    }
+
     </style>
     <title> Maura Fitzgerald </title>
 </head>
@@ -52,7 +75,7 @@
             <div class="link">CONTACT</div>
         </div>
     </div>
-    <div class=icons> 
+    <div class="icons faded"> 
         <a href="https://www.instagram.com/exposuresbymo/" style="position:absolute; top:230px; left:100px">
             <img src="assets/instagram.png">
         </a>
@@ -60,7 +83,7 @@
             <img src="assets/flickr.png">
         </a>
     </div> 
-    <div id="instafeed"></div> 
+    <div class="yani" id="instafeed"></div> 
  
     
     <script>

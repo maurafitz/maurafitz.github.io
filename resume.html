@@ -33,6 +33,27 @@
         left: 150px;
     }
 
+    @-webkit-keyframes fadein {
+        from { opacity: 0.2; }
+        to   { opacity: 1; }
+    }
+
+    @-webkit-keyframes ytranslate {
+        from { transform: translateY(100px); }
+        to   { transform: translateY(0px); }
+    }
+
+    .faded {
+        -webkit-animation: fadein 2s;
+        -webkit-animation-timing-function: ease-out;
+     }
+
+    .yani {
+        -webkit-animation-name: ytranslate;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: ease-out;
+    }
+
     </style>
 
     <title> Maura Fitzgerald </title>
@@ -48,14 +69,15 @@
             <div class="link">PHOTOS</div>
             <div class="link">CONTACT</div>
         </div>
-
-        <a href="https://www.linkedin.com/in/maurafitzgerald15"> 
-            <img src="assets/linkedin.png" style="height: 80px; position: relative">
-        </a>
-        <a href="https://www.github.com/maurafitz"> 
-            <img src="assets/github2.png" style="height: 73px; padding: 4px; position:relative; left: 100px">
-        </a>
-        <div style="position: relative; float:left; margin-top: 400px; margin-left: calc(50% - 350px)">
+        <div class="faded">
+            <a href="https://www.linkedin.com/in/maurafitzgerald15"> 
+                <img src="assets/linkedin.png" style="height: 80px; position: relative">
+            </a>
+            <a href="https://www.github.com/maurafitz"> 
+                <img src="assets/github2.png" style="height: 73px; padding: 4px; position:relative; left: 100px">
+            </a>
+        </div>
+        <div class="yani" style="position: relative; float:left; margin-top: 400px; margin-left: calc(50% - 350px)">
         <iframe src="https://docs.google.com/viewer?srcid=0B2dOUHDl1MQvMTdVWmtDYWUtZG8&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="700px" height="900px"></iframe>
         </div>
     </div>

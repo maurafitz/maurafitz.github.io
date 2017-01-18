@@ -5,11 +5,34 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 	<!-- FONTS -->
-	<link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Pacifico'>
-	<link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Lobster'>
-	<link href='https://fonts.googleapis.com/css?family=Satisfy|Montserrat|Raleway:400,300|Francois+One|Playfair+Display' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,300|Francois+One|Playfair+Display' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href='my_css.css'>
+
+	<style>
+	@-webkit-keyframes fadein {
+        from { opacity: 0.2; }
+        to   { opacity: ''; }
+    }
+
+    @-webkit-keyframes xtranslate {
+        from { transform: translateX(-100px); }
+        to   { transform: translateX(0px); }
+    }
+
+	.faded {
+        -webkit-animation: fadein 2s;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    .aniright {
+        -webkit-animation-name: xtranslate;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+	</style>
 	
 
 	<title> Maura Fitzgerald </title>
@@ -18,10 +41,10 @@
 
 <body style="margin:0px; position:fixed;">
 	<div class="full-screen"> 
-		<div class="image"></div> 
-		<div class="color-larger"> </div>
+		<div class="image faded"></div> 
+		<div class="color-larger faded"> </div>
 
-		<div class="profile_photo"><img src="assets/flowers.png" style="height: 620px; margin-top:50px;"></div>
+		<div class="profile_photo aniright"><img src="assets/flowers.png" style="height: 620px; margin-top:50px;"></div>
 		<div class="name"> MAURA FITZGERALD </div>
 
 		<div class="link-bar"> 
