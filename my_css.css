@@ -14,17 +14,17 @@
 			/*#D6F8D6;*/
 			text-align: right;
 			position: absolute;
-			top: 35px;
-			float: right;
+			top: 12px;
+			float: left;
 			width: 500px;
-			right: 90px;
+			left: 0px;
 		}
 		
 
 		.color-larger {
 			background-color: #92A8D1;
 /*			#A6CFD5;*/
-			height: 180px;
+			height: 80px;
 			width: 102%;
 			position: absolute;
 			opacity: 0.8;
@@ -34,7 +34,7 @@
 			position: absolute;
 			float: right;
 			right: 50px;
-			top: 110px;
+			top: 30px;
 			display: inline-flex;
 		}
 
